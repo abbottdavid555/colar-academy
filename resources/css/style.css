@@ -5,14 +5,15 @@
 
 nav {
     display: flex;
-    background-color: goldenrod;
+    color: blue;
+    background-color: antiquewhite;
     height: 64px;
     font-size: 2rem;
-    border-bottom: 2px solid #f5f5f4;
+    border-bottom: 2px solid goldenrod
 }
 
 nav span {
-    color: white;
+    color: black;
 }
 
 nav .navlinks {
@@ -22,7 +23,6 @@ nav .navlinks {
     margin-left: 1rem;
     margin-right: 1.5rem;
     font-size: 2rem;
-
 }
 
 nav a {
@@ -32,10 +32,9 @@ nav a {
 
 .landing {
     display: flex;
-    color: goldenrod;
-    background-color: black;
-    text-shadow: 5px 5px 5px goldenrod;
-    max-height: 750px;
+    background-color: honeydew;
+    text-shadow: 5px 5px 5px aquamarine;
+    max-height: 1000px;
 }
 
 .landing img {
@@ -66,22 +65,22 @@ nav a {
 }
 
 .landing1 button {
-    width: 40%;
+    font-size: 2rem;
+    width: 60%;
+    height: 7%;
     padding: 8px;
     border-radius: 50px;
     margin-top: 25px;
-    background-color: goldenrod;
-    color: black;
-    border: 2px;
-    border-style: solid;
-    border-color: white;
+    background-color: aqua;
+    border: 3px solid black;
 }
 
 .landing1 button:hover {
-    background-color: black;
-    color: goldenrod;   
-    
+    background-color: lime;
+    transform: scale(1.1);
+    font-size: 2.5rem;
 }
+
 
 .practicing {
     display: flex;
@@ -90,20 +89,132 @@ nav a {
     color: goldenrod;
 }
 
-.practicing img {
-    height: auto;
+.practicing .practicingleft {
+    padding: 2rem 1.5rem;
     width: 60%;
-    margin: 2rem 1.5rem;
 }
 
-.practicing h1 p {
-    display: flex;
-    flex-direction: row;
+.practicing h1, p {
+    width: 80%;
+    text-align: center;
+}
+
+.practicing h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.practicing  .p1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.practicing .p2 {
+    justify-content: center;
+    text-align: left;
 }
 
 .practicingright {
+    width: 40%;
+}
+
+.practicingright div {
+    display: flex;
+    border: 1px solid white;
+}
+
+.practicingright div img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.practicingright .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.practicingright .text p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.part3 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.part3 h1 {
+    padding-top: 2rem;
+    font-size: 5rem;
+    text-decoration: underline;
+    text-shadow: 4px 2px #DAA520;
+    color: black;
+}
+
+.learning {
+    padding: 2rem 4rem;
+}
+
+.learningpart1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    max-width: 25%;
+    min-width: 25%;
+    margin: 2rem;
+    color: white;
+    overflow: hidden;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+}
+
+.course:hover {
+    transform: scale(1.25);
+    border: 5px solid limegreen;
+    transition-duration: 500ms;
+    background-color: yellow;
+    color: black;
+}
+
+
+.course h3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: blue
+}
+
+.course .p1 {
+    text-align: start;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    color: black;
+}
+
+.course .p2 {
+    text-align: start;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    color: black;
+}
+
+.learningpart2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
