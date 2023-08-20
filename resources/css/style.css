@@ -19,9 +19,7 @@ nav {
     margin-top: auto;
     margin-bottom: auto;
 }
-nav img {
 
-}
 nav span {
     color: black;
 }
@@ -30,7 +28,9 @@ nav span {
     font-size: 1rem;
     margin-left: auto;
     margin-right: 1.5rem;
-    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
 
 nav a {
@@ -313,8 +313,6 @@ nav a {
     flex-direction: column;
     width: 40%;
     padding-top: 1.5rem;
-
-    
 }
 
 .right .fisma {
@@ -333,6 +331,7 @@ nav a {
 .right .nowandthen:hover {
     background-color: gray;
 }
+
 .right .nowandthen {
     display: flex;
     flex-direction: row;
@@ -367,7 +366,6 @@ nav a {
 
 .rightp {
     font-size: 1.25rem;
-
 }
 
 .footer {
@@ -384,6 +382,7 @@ nav a {
     margin: 2rem 3rem;
     font-size: 1.25rem;
 }
+
 .footer .footerleft {
     height: 100%;
 }
@@ -395,17 +394,57 @@ nav a {
 }
 
 @media only screen and (max-width: 800px) {
+    *{
+        overflow-x: hidden;
+    }
+    
     nav {
         padding: 0 1.5rem;
-        font-size: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .navright {
+        margin-left: auto;
+        margin-right: 2.5rem;
     }
     
     .landing {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
-        background: pink;
         width: 100%;
+    }
+
+    .landing .landing1 {
+        width: 100%;
+    }
+
+    .landing img {
+        width: 100%;
+        margin: 5rem 0 0 0;
+        position: relative;
+    }
+    .landing .p1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .landing .p2 {
+        font-size: 1rem;
+        margin: 2rem 0 2rem 2rem;
+        font-family: sans-serif;
+    }
+
+    .landing button {
+        width: 50%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
     }
 
     .practicingleft {
@@ -423,6 +462,8 @@ nav a {
     .practicingright .img2 {
         display: flex;
         width: 75%;
+        margin: 1rem;
+        border: 1px solid gray;
     }
 
     .practicingright {
@@ -432,19 +473,88 @@ nav a {
     .practicingright .rightdiv {
         display: flex;
         border: 2px solid black;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
     }
 
     .practicingright .text {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 1rem;
         width: 100%;
-        font-family: 'caveat';
+    }
+
+    .part3 h1 {
+        font-size: 3rem;
     }
 
     .learning { 
         width: 100%;
+    }
+
+    .learning img {
+        display: none;
+    }
+
+    .learning p {
+        display: none;        
+    }
+
+    .learning .learningpart1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .learning .learningpart2 {
+        flex-direction: column;
+    }
+
+    .learning .course {
+        background-color: powderblue;
+        max-width: 75%;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .course h3 {
+        padding-bottom: 1rem;
+    }
+
+    .learning .course:hover {
+        transform: scale(1.01);
+        background-color: yellow;
+    }
+
+    .part4 h1 {
+        font-size: 2.5rem;
+    }
+    .part4 .right {
+        display: none;
+    }
+
+    .part4 .video {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .exhibit .left {
+        width: 100%;
+    }
+    .exhibit .text {
+        display: none;
+    }
+
+    .footer p {
+
+    }
+    .footerright a {
+        display: none;
     }
 }
