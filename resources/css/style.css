@@ -12,6 +12,7 @@ nav {
     border-bottom: 2px solid goldenrod;
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 .navleft {
@@ -107,6 +108,7 @@ nav a {
 .practicing .practicingleft {
     padding: 2rem 1.5rem;
     width: 60%;
+    overflow: hidden;
 }
 
 .practicing h1 {
@@ -139,11 +141,18 @@ nav a {
     border: 2px solid gray;
 }
 
-.practicingright div img {
+
+.practicingright .img1 {
     width: 35%;
     height: auto;
     padding: 1rem;
 }
+
+.practicingright .img2 {
+    display: none;
+    margin: 1rem;
+}
+
 
 .practicingright .text {
     display: flex;
@@ -383,4 +392,32 @@ nav a {
     display: flex;
     margin-left: auto;
     height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        max-height: 64px;
+    }
+    
+    .landing {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .practicingleft {
+        display: none;
+    }
+
+    .practicingright .img1 {
+        display: none;
+    }
+
+    .practicingright .img2 {
+        display: flex;
+    }
+
+    .practicingright {
+        
+    }
 }
