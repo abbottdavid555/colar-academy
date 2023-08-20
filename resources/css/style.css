@@ -394,9 +394,9 @@ nav a {
     height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     nav {
-        max-height: 64px;
+        margin: 0 1.5rem;
     }
     
     .landing {
@@ -409,6 +409,10 @@ nav a {
         display: none;
     }
 
+    .practicingleft .imgleft {
+        display: none;
+    }
+
     .practicingright .img1 {
         display: none;
     }
@@ -418,6 +422,6 @@ nav a {
     }
 
     .practicingright {
-        
+        flex-direction: column;
     }
 }
