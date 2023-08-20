@@ -7,7 +7,7 @@ nav {
     display: flex;
     color: blue;
     background-color: antiquewhite;
-    height: 4rem;
+    min-height: 4rem;
     font-size: 2rem;
     border-bottom: 2px solid goldenrod;
     position: fixed;
@@ -396,13 +396,16 @@ nav a {
 
 @media only screen and (max-width: 800px) {
     nav {
-        margin: 0 1.5rem;
+        padding: 0 1.5rem;
+        font-size: 0.75rem;
     }
     
     .landing {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+        background: pink;
+        width: 100%;
     }
 
     .practicingleft {
@@ -419,9 +422,29 @@ nav a {
 
     .practicingright .img2 {
         display: flex;
+        width: 75%;
     }
 
     .practicingright {
-        flex-direction: column;
+        width: 100%;
+    }
+
+    .practicingright .rightdiv {
+        display: flex;
+        border: 2px solid black;
+    }
+
+    .practicingright .text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        width: 100%;
+        font-family: 'caveat';
+    }
+
+    .learning { 
+        width: 100%;
     }
 }
